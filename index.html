@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" >  
+  <title>Document</title>
+
+  
+</head>
+<body>
+  <header class="page-header">
+    <span class="header-title"><a href="#">User Searching...</a></span>
+    <div>
+      <label>조회 유저 수</label>
+      <select class="search-count">
+        <option>20</option>
+        <option>50</option>
+        <option>100</option>
+        <option>200</option>
+      </select>
+      <input type="text" name="search-input">
+      <button type="button" class="search-btn">조회</button>
+    </div>
+
+  </header>
+
+  <main class="page-main">
+    <div id="user-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

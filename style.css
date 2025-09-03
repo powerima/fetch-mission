@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  size: 16px;
+  height: 100%;
+}
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  border: 1px solid lightgrey;
+  background: #ffffff90;
+  justify-content: space-between;
+  padding: 20px 100px;
+  z-index: 1;
+}
+
+.header-title > a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.page-main {  
+  margin-top: 72.5px;
+  padding: 50px;
+}
+
+#user-list {
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 30px;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+
+
+.notice-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+
+
+.user {
+  display: flex;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 5px 5px 10px 2px lightgrey;
+  border-radius: 12px;
+  gap: 30px;
+  padding: 20px;
+  
+}
+
+.user:hover {
+  cursor: pointer;
+  border: 1px solid #f88f16;
+  background: #c2f3c4;
+}
+
+.user-img {
+  float: left;
+  border-radius: 100%;
+  width: 100px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+}
+
+.user-name {
+  font-size: 17px;  
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.user-contact {
+  color: #0053ff;
+  font-size: 16px;
+  display: inline-block;
+}
